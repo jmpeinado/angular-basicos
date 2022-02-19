@@ -14,4 +14,8 @@ export class PersonajesComponent {
   }
 
   constructor(private dbzService: DbzService) {}
+
+  mostrarListado(): void {
+    console.table(this.dbzService.personajes);
+  }
 }

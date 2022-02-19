@@ -1,5 +1,6 @@
 <h3>Personajes</h3>
 <hr>
+<button type="button" (click)="mostrarListado()">Ver listado en consola</button>
 <ul>
     <li *ngFor="let personaje of personajes">
         {{personaje.nombre}} - {{personaje.poder | number}}
