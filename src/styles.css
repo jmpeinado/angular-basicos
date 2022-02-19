@@ -36,3 +36,17 @@ button:focus{
 .p-1 {
     padding: 1px;
 }
+
+.row {
+    display: flex;
+}
+.col {
+    flex: 1;
+}
+input {
+    display: block;
+    margin: 5px;
+}
+ul {
+    padding-left: 12px;
+}

@@ -1,0 +1,22 @@
+<h3>Agregar</h3>
+<hr>
+<form (ngSubmit)="agregar()">
+    <input 
+        type="text" 
+        placeholder="Nombre"
+        name="nombreHeroe"
+        [(ngModel)]="nuevo.nombre"
+
+    >
+        <!-- Esta es la forma larga de decir que propiedad caza con el input y capturar el evento input(cambia)
+        [value]="nuevo.nombre"
+        (input)="cogerNombre( $event )" -->
+    
+    <input 
+        type="number" 
+        placeholder="Poder"
+        name="poder"
+        [(ngModel)]="nuevo.poder" 
+    >
+    <button type="submit">Agregar</button>
+</form>
